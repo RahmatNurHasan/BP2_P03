@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amikom_purple"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- LOGO -->
+        <ImageView
+            android:src="@drawable/logo_amikom"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Logo AMIKOM" />
+
+        <!-- CARD TRANSPARAN -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg_transparent_card"
+            android:padding="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Judul -->
+            <TextView
+                android:text="LOGIN AMIKOM"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="28dp"
+                android:letterSpacing="0.05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Username -->
+            <EditText
+                android:id="@+id/et_username"
+                android:hint="Masukkan Nama Anda"
+                android:background="@drawable/edittext_outline"
+                android:textColor="@color/white"
+                android:textColorHint="@color/amikom_light"
+                android:textSize="18sp"
+                android:padding="14dp"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/et_password"
+                android:hint="Masukkan Password"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_outline"
+                android:textColor="@color/white"
+                android:textColorHint="@color/amikom_light"
+                android:textSize="18sp"
+                android:padding="14dp"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Tombol Login -->
+            <Button
+                android:id="@+id/btn_login"
+                android:text="MASUK"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_outline"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Register -->
+            <TextView
+                android:id="@+id/tv_register"
+                android:text="Belum punya akun? Daftar di sini"
+                android:textColor="@color/amikom_light"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:text="© 2025 Universitas AMIKOM Yogyakarta"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:alpha="0.8"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

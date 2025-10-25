@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Gradient ungu khas AMIKOM -->
+    <gradient
+        android:startColor="#4B0082"
+        android:endColor="#7A00CC"
+        android:angle="270"
+        android:type="linear" />
+
+    <!-- Tambahan opsional untuk sudut halus -->
+    <corners android:radius="0dp" />
+</shape>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/amikom_purple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Logo -->
+        <ImageView
+            android:src="@drawable/logo_amikom"
+            android:contentDescription="Logo AMIKOM"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <!-- Judul -->
+        <TextView
+            android:text="FORM REGISTRASI"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:shadowColor="#44000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:layout_marginBottom="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Card Transparan -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_glass"
+            android:elevation="12dp"
+            android:padding="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:text="Nama Lengkap"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:hint="Masukkan nama lengkap kamu"
+                android:textColorHint="@color/amikom_light"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:hint="Masukkan email aktif"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/amikom_light"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:text="NIM"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_nim"
+                android:hint="Masukkan NIM mahasiswa"
+                android:inputType="number"
+                android:textColorHint="@color/amikom_light"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:text="Kata Sandi"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:hint="Masukkan kata sandi"
+                android:inputType="textPassword"
+                android:textColorHint="@color/amikom_light"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Tombol Elegan -->
+            <Button
+                android:id="@+id/btn_submit"
+                android:text="Daftar Sekarang"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_gradient_modern"
+                android:paddingVertical="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
